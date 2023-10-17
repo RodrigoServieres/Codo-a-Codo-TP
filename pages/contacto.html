@@ -4,14 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="/asset/css/form-style.css">
     <title>Contacto</title>
 </head>
 <body>
     <header>
         <h1>Página de Contacto</h1>
     </header>
-    <footer>
-        2023 
+
+    <main> 
+        <form class="consulta" action="" method="get" name="formulario">
+            <h1 class="consulta__titulo">Formulario</h1>
+        
+            <label class="consulta__label" for="nombre">Nombre</label>
+            <input class="consulta__input" type="text" name="nombre" placeholder="Ingrese su nombre" required>
+    
+            <label class="consulta__label" for="mail">Mail</label>
+            <input class="consulta__input" type="email" name="mail" placeholder="Ingrese su mail" required>
+        
+            <label class="consulta__label" for="asunto">Asunto</label>
+            <input class="consulta__input" type="text" name="asunto" placeholder="Ingrese el asunto" required>
+    
+            <label class="consulta__label" for="mensaje">Mensaje</label>
+            <textarea class="consulta__textarea" name="mensaje" cols="60" rows="10" maxlength="250" placeholder="Ingrese el mensaje (hasta 250 caracteres)"></textarea>
+    
+            <button class="consulta__button" type="submit">
+                Enviar
+            </button>
+        </form>
+    </main>
+
+        <footer>
+
+            2023 
         <br>
         <a href="../index.html">Volver</a>
     </footer>

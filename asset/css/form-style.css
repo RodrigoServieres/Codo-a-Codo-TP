@@ -1,0 +1,25 @@
+/* 
+Seccion del archivo para darle estilo al formulario
+*/
+
+.consulta{
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+.consulta__titulo{
+    text-align: center;
+}
+
+.consulta__label, .consulta__input, .consulta__textarea, .consulta__button{
+    display: block;
+    width: 100%;
+    margin: 40px;
+    resize: none;
+}
+
+
+
