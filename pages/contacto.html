@@ -5,45 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../asset/css/style.css">
     <link rel="stylesheet" href="/asset/css/form-style.css">
+    <link rel="shortcut icon" href="/asset/media/icons/relojes-motocross-16x16px.ico" />
+
     <script src="../asset/js/navbar2.js"></script>
     <title>Contacto</title>
 </head>
-<body>
+<body class="formulario">
     <header>
-        <div style="text-align: center;">
-            <input type="text">
-        </div>
-        <h1>Página de Contacto</h1>
     </header>
 
-    <main> 
+    <main>
         <form class="consulta" action="" method="get" name="formulario">
-            <h1 class="consulta__titulo">Formulario</h1>
+            <h1 class="consulta__titulo">Contactanos</h1>
         
+            <input class="consulta__input" type="text" name="nombre" required>
             <label class="consulta__label" for="nombre">Nombre</label>
-            <input class="consulta__input" type="text" name="nombre" placeholder="Ingrese su nombre" required>
     
+            <input class="consulta__input" type="email" name="mail" required>
             <label class="consulta__label" for="mail">Mail</label>
-            <input class="consulta__input" type="email" name="mail" placeholder="Ingrese su mail" required>
         
+            <input class="consulta__input" type="text" name="asunto" required>
             <label class="consulta__label" for="asunto">Asunto</label>
-            <input class="consulta__input" type="text" name="asunto" placeholder="Ingrese el asunto" required>
     
+            <input class="consulta__input" name="mensaje" maxlength="250">
             <label class="consulta__label" for="mensaje">Mensaje</label>
-            <textarea class="consulta__textarea" name="mensaje" cols="60" rows="10" maxlength="250" placeholder="Ingrese el mensaje (hasta 250 caracteres)"></textarea>
     
-            <button class="consulta__button" type="submit">
-                Enviar
-            </button>
+            <input class="consulta__submit" type="submit">
         </form>
     </main>
 
-        <footer>
-
-            2023 
-        <br>
+    <footer>
+        2023 
         <a href="../index.html">Volver</a>
     </footer>
 </body>
-<script src="../asset/js/form.js"></script>
+    <script src="/asset/js/form.js"></script>
 </html>

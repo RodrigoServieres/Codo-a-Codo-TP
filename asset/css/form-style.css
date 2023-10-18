@@ -1,25 +1,68 @@
 /* 
 Seccion del archivo para darle estilo al formulario
 */
+body.formulario{
+    background-color: white;
+    background-image: url(/asset/media/images/descarga.png);
+    margin: o;
+
+}
+
 
 .consulta{
     width: 500px;
     max-width: 100%;
     margin: auto;
     margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(80, 81, 69);
+    box-shadow: 0 0 10px 1px rgb(0, 0, 0, 0.4);
     position: relative;
 }
 
 .consulta__titulo{
     text-align: center;
+    margin-top: 0;
+    color: white;
 }
 
-.consulta__label, .consulta__input, .consulta__textarea, .consulta__button{
+.consulta__label,
+.consulta__input,
+.consulta__submit{
     display: block;
     width: 100%;
-    margin: 40px;
-    resize: none;
+    margin-bottom: 40px;
+    color: white
 }
 
+.consulta__label{
+    padding-left: 20px;
+    position: absolute;
+    font-size: 1.3rem;
+    
+    transition: all 0.2s;
+    margin-top: -85px;
+    
+}
 
+.consulta__input,
+.consulta__submit{
+    padding: 20px;
+    background-color: rgb(47, 147, 153, 0.2);
+    border: 2px solid (158, 168, 0);
+    font-size: 1.15rem;
+    color: white;
+}
 
+.consulta__submit{
+    cursor: pointer;
+}
+
+/*Transición*/
+.consulta__input:focus + .consulta__label{
+    margin-top: -135px;
+}
+
+.fijar{
+    margin-top: -135px;
+}
