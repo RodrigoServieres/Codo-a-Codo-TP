@@ -30,4 +30,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 20%;
-  }
+}
+header > ul {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
