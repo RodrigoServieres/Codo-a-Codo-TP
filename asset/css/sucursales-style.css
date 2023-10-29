@@ -1,0 +1,51 @@
+.sucursales{
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: black;
+    background-size: cover;
+}
+
+div > label{
+    color: white;
+    font-size: 2rem;
+    font-style: bold;
+    padding-right: 2rem;
+}
+
+div > select, button{
+    font-size: 1.15rem;
+    padding: 5px;
+
+}
+
+.contenedor-mapa{
+    width: 100%;
+    height: 100%;
+}
+
+.nombre-provincia{
+    border-bottom: 1px dashed whitesmoke;
+    color: white;
+    font-size: 1.5rem;
+    font-style: bold;
+    padding: 10px;
+}
+
+.direccion{
+    color: white;
+    font-size: 1rem;
+    font-style: bold;
+    padding: 10px 10px 10px 50px;
+    
+    border-bottom: 1px dashed whitesmoke;
+
+}
+
+div > iframe{
+    margin-top: 20px;
+}
