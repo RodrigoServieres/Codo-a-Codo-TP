@@ -47,4 +47,6 @@ br {
 header {
     background-color: black;
     color: white;
+    border: 1px solid red;
+    margin: 25px 0px;
 }
