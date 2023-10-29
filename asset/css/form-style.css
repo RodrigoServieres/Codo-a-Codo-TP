@@ -1,68 +1,113 @@
-/* 
-Seccion del archivo para darle estilo al formulario
-*/
-body.formulario{
-    background-color: white;
-    background-image: url(/asset/media/images/descarga.png);
-    margin: o;
-
+/* Seccion del archivo para darle estilo al formulario */
+.form{
+    background-image: linear-gradient(
+        to top,
+        rgb(153, 153, 153, 0.6),
+        rgb(245, 246, 256, 0.7)
+    ),
+    url(../media/images/byOlga_spb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
-
-.consulta{
-    width: 500px;
+.form__contenedor{
+    width: 400px;
     max-width: 100%;
-    margin: auto;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: rgb(80, 81, 69);
-    box-shadow: 0 0 10px 1px rgb(0, 0, 0, 0.4);
-    position: relative;
+    background-color: rgb(47,147,153, 0.85);
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 5px rgb(50, 50, 50);
+    
 }
 
 .consulta__titulo{
     text-align: center;
-    margin-top: 0;
-    color: white;
+    color: black;
+    padding: 20px 40px;
+    border-bottom: solid black;
 }
 
-.consulta__label,
-.consulta__input,
-.consulta__submit{
+.consulta__caja{
+    padding: 35px 25px 10px 25px;
+    position: relative;
+}
+
+.consulta__caja input{
     display: block;
     width: 100%;
-    margin-bottom: 40px;
-    color: white
-}
-
-.consulta__label{
-    padding-left: 20px;
-    position: absolute;
-    font-size: 1.3rem;
-    
-    transition: all 0.2s;
-    margin-top: -85px;
-    
-}
-
-.consulta__input,
-.consulta__submit{
-    padding: 20px;
-    background-color: rgb(47, 147, 153, 0.2);
-    border: 2px solid (158, 168, 0);
+    padding: 15px;
     font-size: 1.15rem;
-    color: white;
+    
 }
 
-.consulta__submit{
+.consulta__caja label{
+    display: block;
+    padding-left: 20px;
+    font-size: 1.3rem;
+    margin-top: -40px;
+    position: absolute;
+    transition: all 0.4s;
+    cursor: text;
+    color:rgb(160, 160, 160)
+}
+
+.consulta__caja button{
+    display: block;
+    padding: 10px 15px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    width: 100%;
+    background-color: rgb(37,117,122);
+    border: 2px solid;
+    text-transform: uppercase;
     cursor: pointer;
 }
 
-/*Transición*/
-.consulta__input:focus + .consulta__label{
-    margin-top: -135px;
+.consulta__caja button:disabled{
+    background-color: rgb(160, 160, 160);
+    border: 2px solid;
+    cursor: default;
 }
 
-.fijar{
-    margin-top: -135px;
+/*Transición*/
+input:focus + label,
+input:not(:placeholder-shown) + label{
+    margin-top: -85px;
+    cursor: default;
+    color: black;
+ }
+
+ /*Estilos para validación*/
+.valido{
+    border-bottom: 4px solid rgb(157, 225, 0);
+}
+
+.invalido{
+    border-bottom: 4px solid red;
+}
+
+.texto-error{
+    color: rgb(98,36,123);
+    font-style: oblique;
+    font-size: 0.95rem;
+    visibility: hidden;
+}
+
+.mostrar{
+    visibility: visible;
+}
+
+/*Link al autor de la imagen usada de fondo*/
+.mencion{
+    align-self: flex-end;
+}
+
+.mencion a{
+    color: black;
+    font-size: 1.5rem;
 }

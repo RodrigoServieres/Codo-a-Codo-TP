@@ -4,40 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../asset/css/style.css">
-    <link rel="stylesheet" href="/asset/css/form-style.css">
-    <link rel="shortcut icon" href="/asset/media/icons/relojes-motocross-16x16px.ico" />
-
+    <link rel="shortcut icon" href="../asset/media/icons/relojes-motocross-16x16px.ico" />
     <script src="../asset/js/navbar2.js"></script>
     <title>Contacto</title>
 </head>
-<body class="formulario">
+<body>
     <header>
     </header>
 
     <main>
-        <form class="consulta" action="" method="get" name="formulario">
-            <h1 class="consulta__titulo">Contactanos</h1>
-        
-            <input class="consulta__input" type="text" name="nombre" required>
-            <label class="consulta__label" for="nombre">Nombre</label>
-    
-            <input class="consulta__input" type="email" name="mail" required>
-            <label class="consulta__label" for="mail">Mail</label>
-        
-            <input class="consulta__input" type="text" name="asunto" required>
-            <label class="consulta__label" for="asunto">Asunto</label>
-    
-            <input class="consulta__input" name="mensaje" maxlength="250">
-            <label class="consulta__label" for="mensaje">Mensaje</label>
-    
-            <input class="consulta__submit" type="submit">
-        </form>
+        <section class="form">
+            <div class="form__contenedor">
+                <form id="formulario" class="consulta" action="" method="get" name="formulario">
+                    <h1 class="consulta__titulo">Contactanos</h1>
+
+                   <div class="consulta__caja">
+                       <input type="text" id="nombre" name="nombre" placeholder="">
+                       <label for="nombre">Nombre</label>
+                       <p class="texto-error">Introduce un nombre válido</p>
+                    </div> 
+                    <div class="consulta__caja">
+                        <input type="email" id="mail" name="mail" placeholder="">
+                        <label for="mail">Mail</label>
+                        <p class="texto-error">Introduce un mail válido. Ejemplo: ejemplo@gmail.com</p>
+                    </div>
+                    <div class="consulta__caja">
+                        <input type="text" id="asunto" name="asunto" placeholder="">
+                        <label for="asunto">Asunto</label>
+                        <p class="texto-error">Introduce un asunto válido</p>
+                    </div>
+                    <div class="consulta__caja">
+                        <input type="text" name="mensaje" id="mensaje" placeholder="">
+                        <label for="mensaje">Mensaje</label>
+                        <p class="texto-error">Mensaje entre 0 y 250 caracteres</p>
+                    </div>
+                    <div class="consulta__caja">
+                        <button type="submit" id="submit-btn">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mencion">
+                <a href="https://www.freepik.com/free-vector/vintage-clocks-pattern_857152.htm#query=patron%20relojes%20vintage&position=1&from_view=search&track=ais" 
+                target="_blank">Image by Olga_spb</a>
+            </div>
+        </section>
     </main>
 
     <footer>
         2023 
         <a href="../index.html">Volver</a>
     </footer>
+    <script src="../asset/js/form.js"></script>
 </body>
-    <script src="/asset/js/form.js"></script>
 </html>
