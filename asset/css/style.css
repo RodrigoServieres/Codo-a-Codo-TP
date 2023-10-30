@@ -1,4 +1,6 @@
 @import url(./form-style.css);
+@import url(./carrucel.css);
+@import url(./sucursales-style.css);
 
 *{
     box-sizing: border-box;
@@ -50,3 +52,5 @@ header {
     border: 1px solid red;
     margin: 25px 0px;
 }
+
+

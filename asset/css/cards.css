@@ -1,10 +1,13 @@
 html{
-    background-image: url("fondo.jpg");
+    background-image: url("../media/images/fondo.jpg");
 }
 
 
 header{
     color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 main {
@@ -66,4 +69,11 @@ main>div {
 
 .wrapperinfo{
     font-size: 18px;
+}
+
+.sh2{
+    margin: 7px;
+    color: white;
+    text-decoration: none;
+    border: solid 2px lightblue;
 }
