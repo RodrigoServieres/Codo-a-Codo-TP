@@ -1,6 +1,6 @@
 # Codo-a-Codo-TP
 
-El trabajo lo dividimos en partes entre los 3 integrantes del grupo.
+El trabajajo lo dividimos en partes entre los 3 integrantes del grupo.
 
 Pablo se encargó de realizar la página de los productos y el footer.
 
