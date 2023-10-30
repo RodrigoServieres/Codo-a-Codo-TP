@@ -8,9 +8,9 @@
     margin: 0;
 }
 
-body {
+/* body {
     background-color: brown;
-}
+} */
 header > h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
@@ -38,10 +38,6 @@ footer {
     width: 20%;
     display: inline;
 }
-header > ul {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgb(198, 31, 64);
-}
 hr { border: 1px solid #DDDDDD; margin: 25px 0px; }
 br {
     display: inline;
@@ -51,6 +47,19 @@ header {
     color: white;
     border: 1px solid red;
     margin: 25px 0px;
+    
 }
 
+header > ul{
 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(198, 31, 64);
+    
+}
+
+header > ul > li{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-decoration: none;
+}
